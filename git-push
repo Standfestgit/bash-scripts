@@ -1,0 +1,9 @@
+#!/bin/sh
+
+# Push changes into current branch
+
+CURRENT_BRANCH=`git symbolic-ref --short HEAD`
+
+echo "Executing 'git push origin ${CURRENT_BRANCH}'..."
+
+git push origin ${CURRENT_BRANCH}

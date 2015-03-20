@@ -1,0 +1,11 @@
+#!/bin/sh
+
+# Pull changes from current branch
+
+CURRENT_BRANCH=`git symbolic-ref --short HEAD`
+
+echo "Executing 'git pull origin ${CURRENT_BRANCH}'..."
+
+git pull origin ${CURRENT_BRANCH}
+
+
