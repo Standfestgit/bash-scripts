@@ -87,11 +87,12 @@ git config --global credential.helper 'cache --timeout=604800'
 alias "cd.."='cd ..'
 alias ls='ls -lhas --color=tty'
 alias gs="git status"
-alias gd="git diff"
-alias gb="git branch"
 alias gpm="git pull origin master"
-alias gp="git-pull"
-alias gpp="git-push"
+#alias gp="git-pull"
+#alias gpp="git-push"
+alias gp='echo "Executing \"git pull origin $(current_branch)...\""  && git pull origin $(current_branch)'
+alias gpp='echo "Executing \"git push origin $(current_branch)...\""  && git push origin $(current_branch)'
 alias gbd="git branch -D"
-alias gco="git checkout "
+alias ggg='git pull origin $(current_branch)'
+
 
