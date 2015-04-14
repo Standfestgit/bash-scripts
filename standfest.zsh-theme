@@ -86,10 +86,13 @@ git config --global credential.helper 'cache --timeout=604800'
 # [Standfest] git command aliases
 alias "cd.."='cd ..'
 alias ls='ls -lhas --color=tty'
-alias gs="git status"
-alias gpm="git pull origin master"
+alias gs='git status'
+alias gpm='git pull origin master'
 alias gp='echo "Executing \"git pull origin $(current_branch)\"..."  && git pull origin $(current_branch)'
 alias gpp='echo "Executing \"git push origin $(current_branch)\"..."  && git push origin $(current_branch)'
 alias gbd="git branch -D"
+alias phinxc='php vendor/bin/phinx create -c phinx.php'
+alias phinxm='php vendor/bin/phinx migrate -c phinx.php'
+alias phinxs='php vendor/bin/phinx status -c phinx.php'
 
 
