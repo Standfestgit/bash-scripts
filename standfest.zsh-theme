@@ -38,8 +38,8 @@ add-zsh-hook precmd  theme_precmd
 PATH=$PATH:~/.composer/vendor/bin:~/git-scripts:/usr/local/sbin:/usr/sbin:/sbin
 
 # [Standfest] auto-completion. Next two lines lags on Ubuntu. Could be disabled.
-autoload -Uz compinit
-compinit
+#autoload -Uz compinit
+#compinit
 
 zstyle ':completion:*' auto-description 'specify: %d'
 zstyle ':completion:*' completer _expand _complete _correct _approximate
