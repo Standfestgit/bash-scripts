@@ -91,6 +91,7 @@ alias gu="git-undo"
 alias phinxc='php vendor/bin/phinx create -c phinx.php'
 alias phinxm='php vendor/bin/phinx migrate -c phinx.php'
 alias phinxs='php vendor/bin/phinx status -c phinx.php'
+alias phinxr='php vendor/bin/phinx rollback -c phinx.php'
 
 
 # [Standfest] ls colors
