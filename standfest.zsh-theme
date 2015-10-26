@@ -82,6 +82,8 @@ git config --global credential.helper 'cache --timeout=604800'
 # [Standfest] git command aliases
 alias "cd.."='cd ..'
 alias ls='ls -lhas --color=tty'
+# for BSD: alias ls='ls -lhasG'
+
 alias gs='git status'
 alias gpm='git pull origin master'
 alias gp='echo "Executing \"git pull origin $(current_branch)\"..."  && git pull origin $(current_branch)'
