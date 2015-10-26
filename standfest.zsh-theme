@@ -90,6 +90,7 @@ alias gbd="git branch -D"
 alias gu="git-undo"
 alias gss="git stash"
 alias gsp="git stash pop"
+alias gclean='git clean  -d  -fx ""'
 alias phinxc='php vendor/bin/phinx create -c phinx.php'
 alias phinxm='php vendor/bin/phinx migrate -c phinx.php'
 alias phinxs='php vendor/bin/phinx status -c phinx.php'
