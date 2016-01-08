@@ -97,6 +97,13 @@ alias phinxc='php vendor/bin/phinx create -c phinx.php'
 alias phinxm='php vendor/bin/phinx migrate -c phinx.php'
 alias phinxs='php vendor/bin/phinx status -c phinx.php'
 alias phinxr='php vendor/bin/phinx rollback -c phinx.php'
+#alias xd="sudo php5enmod xdebug && sudo service apache2 restart"
+#alias xdo="sudo php5dismod xdebug && sudo service apache2 restart"
+alias xd="sudo php5enmod xdebug && sudo service php5-fpm restart"
+alias xdo="sudo php5dismod xdebug && sudo service php5-fpm restart"
+alias gok="git diff | grep HEAD"
+
+
 
 
 # [Standfest] ls colors
