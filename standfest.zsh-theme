@@ -137,6 +137,7 @@ bindkey -s "^[Oo" "/"
 
 # Sets tab title in iTerm2 
 # usage: title hello world
+# note: DISABLE_AUTO_UPDATE="true" must be uncommented in ~/.zshrc
 function title {
     echo -ne "\e]1;"$*"\a"
 }
