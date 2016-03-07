@@ -135,4 +135,9 @@ bindkey -s "^[Om" "-"
 bindkey -s "^[Oj" "*"
 bindkey -s "^[Oo" "/"
 
+# Sets tab title in iTerm2 
+# usage: title hello world
+function title {
+    echo -ne "\e]1;"$*"\a"
+}
 
