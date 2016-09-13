@@ -105,6 +105,7 @@ alias xd="sudo phpenmod xdebug && sudo service php7.0-fpm restart"
 alias xdo="sudo phpdismod xdebug && sudo service php7.0-fpm restart"
 
 alias gok="git diff | grep HEAD"
+alias prettyjson='python -m json.tool'
 
 
 
