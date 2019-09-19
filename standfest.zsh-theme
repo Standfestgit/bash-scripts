@@ -35,7 +35,9 @@ autoload -U add-zsh-hook
 add-zsh-hook precmd  theme_precmd
 
 # [Standfest] path
-PATH=$PATH:~/.composer/vendor/bin:~/git-scripts:/usr/local/sbin:/usr/sbin:/sbin
+PATH=$PATH:~/.config/composer/vendor/bin:~/git-scripts:/usr/local/sbin:/usr/sbin:/sbin
+
+
 
 # [Standfest] auto-completion. Next two lines lags on Ubuntu. Could be disabled.
 #autoload -Uz compinit
