@@ -1,8 +1,10 @@
-!#/bin/sh
+#!/bin/sh
 
-sudo apt-get install zsh
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-sudo chsh -s /usr/bin/zsh vagrant
+DST_USER="$1"
+
+cd ~
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 git clone https://github.com/Standfestgit/bash-scripts.git
 cp bash-scripts/standfest.zsh-theme .oh-my-zsh/themes
-zsh
+#sudo chsh -s /usr/bin/zsh ${DST_USER}
+#zsh
